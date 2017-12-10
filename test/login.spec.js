@@ -25,21 +25,10 @@ var host='';
 var ip=[];
 
 
-var hostsTor = ["https://172.16.208.51/index.cfm?", "https://172.16.208.52/index.cfm?", "https://172.16.208.53/index.cfm?",
-    "https://172.16.208.54/index.cfm?","https://172.16.208.71/index.cfm?", "https://172.16.208.72/index.cfm?", "https://172.16.208.73/index.cfm?",
-    "https://172.16.208.74/index.cfm?","https://172.16.208.102/index.cfm?", "https://172.16.208.105/index.cfm?", "https://172.16.208.106/index.cfm?",
-    "https://172.16.208.107/index.cfm?","https://172.16.208.112/index.cfm?", "https://172.16.208.113/index.cfm?", "https://172.16.208.115/index.cfm?",
-    "https://172.16.208.134/index.cfm?", "https://172.16.208.135/index.cfm?","https://172.16.208.101/index.cfm?", "https://172.16.208.109/index.cfm?", "https://172.16.208.110/index.cfm",
-    "https://172.16.208.111/index.cfm?","https://172.16.208.116/index.cfm?", "https://172.16.208.117/index.cfm?", "https://172.16.208.118/index.cfm?",
-    "https://172.16.208.119/index.cfm?","https://172.16.208.81/index.cfm?", "https://172.16.208.82/index.cfm?", "https://172.16.208.83/index.cfm?",
-    "https://172.16.208.84/index.cfm"
+var hostsTor = ["Array of IPs"
 ];
 
-var hostsVan = ["https://172.20.208.51/index.cfm?", "https://172.20.208.52/index.cfm?", "https://172.20.208.53/index.cfm?",
-    "https://172.20.208.54/index.cfm","https://172.20.208.61/index.cfm?", "https://172.20.208.62/index.cfm?", "https://172.20.208.63/index.cfm?",
-    "https://172.20.208.64/index.cfm","https://172.20.208.71/index.cfm?", "https://172.20.208.72/index.cfm?", "https://172.20.208.73/index.cfm?",
-    "https://172.20.208.74/index.cfm","https://172.20.208.81/index.cfm?", "https://172.20.208.82/index.cfm?", "https://172.20.208.83/index.cfm?",
-    "https://172.20.208.84/index.cfm"
+var hostsVan = ["Array of IPs"
 ];
 
 
@@ -125,7 +114,7 @@ describe('Tests Bookings Sandals', function() {
        LoginPage.state.selectByValue('AZ');
        LoginPage.zip.setValue('85001');
        LoginPage.phone.setValue('6025550138');
-       LoginPage.email.setValue('lespinoza@sanservices.hn');
+       LoginPage.email.setValue(//Insert Email);
        LoginPage.birthMonth.selectByValue('5');
        LoginPage.birthDay.selectByValue('20');
        LoginPage.birthYear.selectByValue('1990');
@@ -139,7 +128,7 @@ describe('Tests Bookings Sandals', function() {
        browser.submitForm('#guestinfoForm');
 
 
-       LoginPage.ccnumber.setValue('5431212121212020');
+       LoginPage.ccnumber.setValue(//CARD NUMBER);
        LoginPage.ccname.setValue('Random');
        LoginPage.ccexpiremonth.selectByValue('3');
        LoginPage.ccexpireyear.selectByValue(year+2);
@@ -237,7 +226,7 @@ describe('Tests Bookings Sandals', function() {
        LoginPage.state.selectByValue('AZ');
        LoginPage.zip.setValue('85001');
        LoginPage.phone.setValue('6025550138');
-       LoginPage.email.setValue('lespinoza@sanservices.hn');
+       LoginPage.email.setValue(//insert email);
        LoginPage.birthMonth.selectByValue('5');
        LoginPage.birthDay.selectByValue('20');
        LoginPage.birthYear.selectByValue('1990');
@@ -251,7 +240,7 @@ describe('Tests Bookings Sandals', function() {
        browser.submitForm('#guestinfoForm');
 
 
-       LoginPage.ccnumber.setValue('5431212121212020');
+       LoginPage.ccnumber.setValue(//CARD NUMBER);
        LoginPage.ccname.setValue('Random');
        LoginPage.ccexpiremonth.selectByValue('3');
        LoginPage.ccexpireyear.selectByValue(year+2);
